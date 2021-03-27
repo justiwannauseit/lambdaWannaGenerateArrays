@@ -27,8 +27,8 @@ public class Main {
                 return index * index - input;
             }
         };
-        //Рандомно заполняет массив (input + рандомное число (от 0 до index).
-        ArraysGenerator arrayProcessingPrinciple4 = (sizeArray, usersInput) -> input + random.nextInt(index);
+        //Рандомно заполняет массив (input + рандомное число (от 0 до index+sizeArray).
+        ArraysGenerator arrayProcessingPrinciple4 = (sizeArray, usersInput) -> input + random.nextInt(index + sizeArray);
         //Просто проверка если input - index < sizeArray то часло равно sizeArray + рандомное число (от 0 до sizeArray).
         ArraysGenerator arrayProcessingPrinciple5 = (sizeArray, usersInput) -> {
             if (input - index < sizeArray) {
